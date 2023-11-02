@@ -1,13 +1,22 @@
 package com.pluralsight;
 
-public class HandClass {
+import java.util.ArrayList;
+
+
+public class Hand {
     private ArrayList<Card> cards;
+    static ArrayList<String> players;
+    static ArrayList<Hand> playerNum;
+
     public Hand(){
         cards = new ArrayList<>();
+        players = new ArrayList<>();
+        playerNum = new ArrayList<>();
     }
+
     // A Card is dealt to the Hand and the Hand is responsible
 // to store the card
-    public void Deal(Card card){
+    public void deal(Card card){
         cards.add(card);
     }
     public int getSize(){

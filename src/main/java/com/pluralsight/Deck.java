@@ -1,6 +1,8 @@
 package com.pluralsight;
 
 import java.util.Collections;
+import java.util.ArrayList;
+
 public class Deck {
     private ArrayList<Card> cards;
     public Deck(){
@@ -20,7 +22,7 @@ public class Deck {
     public void shuffle(){
         Collections.shuffle(cards);
     }
-    public deal(){
+    public Card deal(){
 // deal the top card (if there are any cards left
         if(cards.size() > 0){
             Card card = cards.remove(0);
